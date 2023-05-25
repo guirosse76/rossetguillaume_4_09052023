@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: "Roboto", sans-serif;
   a {
     text-decoration: none;
     color: #000000;
@@ -24,20 +25,24 @@ header {
   justify-content: center;
   align-items: center;
   gap: 17px;
+  p {
+    font-weight: 500;
+  }
 }
 
 .exploration {
   .titre-exploration {
     text-align: center;
-    background-color: #d2d2d2;
+    background-color: #f6f6f6;
     padding: 20px;
+    font-weight: 700;
   }
   h1 {
     margin: 0;
   }
 
   .sous-titreH1 {
-    font-family: roboto;
+    font-weight: 300;
     padding: 0px, 58px;
   }
 
@@ -97,8 +102,10 @@ header {
       .card-title {
         margin: 0;
         margin-top: 16px;
+        font-weight: 700;
       }
       .card-subtitle {
+        font-weight: 300;
         margin-top: 5px;
         padding-bottom: 12px;
       }
@@ -110,12 +117,14 @@ footer {
   background-color: #353535;
   color: white;
   .titre-footer {
+    font-family: "Shrikhand", cursive;
     margin-top: 22px;
     padding-bottom: 16px;
   }
 
   a {
     color: white;
+    font-weight: 500;
   }
 
   ul {

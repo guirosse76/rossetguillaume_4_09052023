@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 body a {
   text-decoration: none;
@@ -23,17 +24,21 @@ header img {
   align-items: center;
   gap: 17px;
 }
+.recherche p {
+  font-weight: 500;
+}
 
 .exploration .titre-exploration {
   text-align: center;
-  background-color: #d2d2d2;
+  background-color: #f6f6f6;
   padding: 20px;
+  font-weight: 700;
 }
 .exploration h1 {
   margin: 0;
 }
 .exploration .sous-titreH1 {
-  font-family: roboto;
+  font-weight: 300;
   padding: 0px, 58px;
 }
 .exploration button {
@@ -89,8 +94,10 @@ header img {
 .restaurants .card .card-content .card-title {
   margin: 0;
   margin-top: 16px;
+  font-weight: 700;
 }
 .restaurants .card .card-content .card-subtitle {
+  font-weight: 300;
   margin-top: 5px;
   padding-bottom: 12px;
 }
@@ -100,11 +107,13 @@ footer {
   color: white;
 }
 footer .titre-footer {
+  font-family: "Shrikhand", cursive;
   margin-top: 22px;
   padding-bottom: 16px;
 }
 footer a {
   color: white;
+  font-weight: 500;
 }
 footer ul {
   margin: 0;
