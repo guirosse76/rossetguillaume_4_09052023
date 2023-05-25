@@ -1,5 +1,9 @@
 body {
   margin: 0;
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
 }
 
 header {
@@ -110,15 +114,23 @@ footer {
     padding-bottom: 16px;
   }
 
+  a {
+    color: white;
+  }
+
   ul {
     margin: 0;
     padding: 22px;
   }
+
   li {
     display: flex;
     align-items: center;
-    gap: 11px;
     height: 19px;
     margin-bottom: 7px;
+    gap: 7px;
+  }
+  i {
+    padding-right: 11px;
   }
 }

@@ -1,6 +1,10 @@
 body {
   margin: 0;
 }
+body a {
+  text-decoration: none;
+  color: #000000;
+}
 
 header .logo {
   margin: auto;
@@ -99,6 +103,9 @@ footer .titre-footer {
   margin-top: 22px;
   padding-bottom: 16px;
 }
+footer a {
+  color: white;
+}
 footer ul {
   margin: 0;
   padding: 22px;
@@ -106,9 +113,12 @@ footer ul {
 footer li {
   display: flex;
   align-items: center;
-  gap: 11px;
   height: 19px;
   margin-bottom: 7px;
+  gap: 7px;
+}
+footer i {
+  padding-right: 11px;
 }
 
 header .logo {
@@ -148,26 +158,6 @@ header img {
   color: white;
   font-size: 16px;
   width: 186px;
-}
-
-footer {
-  background-color: #353535;
-  color: white;
-}
-footer .titre-footer {
-  margin-top: 22px;
-  padding-bottom: 16px;
-}
-footer ul {
-  margin: 0;
-  padding: 22px;
-}
-footer li {
-  display: flex;
-  align-items: center;
-  gap: 11px;
-  height: 19px;
-  margin-bottom: 7px;
 }
 
 /*# sourceMappingURL=style.css.map */
