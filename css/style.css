@@ -136,10 +136,10 @@ footer li {
   align-items: center;
   height: 19px;
   margin-bottom: 7px;
-  gap: 7px;
+  gap: 15px;
 }
 footer i {
-  padding-right: 11px;
+  padding-right: 0;
 }
 
 header .logo {
@@ -150,6 +150,11 @@ header .logo {
 }
 header img {
   width: 100%;
+}
+
+.image-header img {
+  height: 275px;
+  width: 375px;
 }
 
 .menu {
