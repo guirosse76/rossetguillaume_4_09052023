@@ -27,6 +27,9 @@ header img {
 .recherche p {
   font-weight: 500;
 }
+.recherche i {
+  color: #353535;
+}
 
 .exploration .titre-exploration {
   text-align: center;
@@ -56,16 +59,25 @@ header img {
 .fonctionnement {
   padding: 20px;
 }
-.fonctionnement article {
+.fonctionnement ul {
+  padding: 7px;
+  margin: 0;
+}
+.fonctionnement ul li {
   display: flex;
   align-items: center;
   background: #f7f7f7;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
-  margin-bottom: 24.92px;
+  margin-bottom: 25px;
+  padding-left: 32px;
 }
-.fonctionnement article i {
-  margin-right: 30;
+.fonctionnement ul i {
+  margin-right: 25px;
+  color: #7e7e7e;
+}
+.fonctionnement ul #iconeSTORE {
+  color: #9356dc;
 }
 
 .restaurants {
