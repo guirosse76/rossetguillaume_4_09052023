@@ -59,6 +59,7 @@ header {
     font-weight: bold;
     font-size: 16px;
     padding: 13px 18.75px;
+    border: 0;
   }
 }
 
@@ -68,13 +69,27 @@ header {
     padding: 7px;
     margin: 0;
     li {
+      height: 72px;
       display: flex;
       align-items: center;
       background: #f7f7f7;
       box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
       border-radius: 20px;
       margin-bottom: 25px;
-      padding-left: 32px;
+      padding-left: 50px;
+      position: relative;
+      .chiffres {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: -5px;
+        background: #9356dc;
+        height: 24px;
+        width: 24px;
+        border-radius: 25px;
+        color: white;
+      }
     }
     i {
       margin-right: 25px;
