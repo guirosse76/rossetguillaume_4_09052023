@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "saas": "^1.0.0",
     "sass": "^1.62.1"
-  }
+  },
+  "devDependencies": {}
 }
