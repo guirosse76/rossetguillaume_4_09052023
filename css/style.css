@@ -129,6 +129,7 @@ header img {
 .restaurants .card img {
   object-fit: cover;
   width: 100%;
+  height: 237px;
 }
 .restaurants .card .card-content {
   padding-left: 13px;
@@ -150,10 +151,17 @@ header img {
   padding-right: 25px;
   position: relative;
 }
+.restaurants .card .card-content .coeur #coeur-vide:hover {
+  opacity: 0;
+}
 .restaurants .card .card-content .coeur #coeur-plein {
+  opacity: 0;
   position: absolute;
   left: 0px;
   top: 11px;
+}
+.restaurants .card .card-content .coeur #coeur-plein:hover {
+  opacity: 1;
 }
 
 footer {
@@ -200,7 +208,7 @@ header img {
 }
 
 .menu {
-  padding: 20px;
+  padding: 13px;
   background: #f6f6f6;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   margin: -40px 0px 0px 0px;
@@ -208,13 +216,38 @@ header img {
   border-radius: 35px;
 }
 .menu article {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background: #f7f7f7;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
-  margin-bottom: 24.92px;
+}
+.menu article .choix {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 12px;
+}
+.menu article .choix .prix {
+  font-weight: bold;
+}
+.menu article .choix .prix p {
+  position: absolute;
+  margin-top: 9px;
+}
+.menu article .choix .texte-choix h3 {
+  margin: 0;
+}
+.menu article .choix .texte-choix p {
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+.menu article .choix .valide {
+  background: #99e2d0;
+  border-radius: 0px 15px 15px 0px;
+  width: 59px;
+  height: 69px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .menu .bouton-commander {
   display: flex;
@@ -234,14 +267,14 @@ header img {
   border: 0;
 }
 
-.container {
+.container-loader {
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.container span {
+.container-loader span {
   margin: 1rem;
 }
 
@@ -262,7 +295,7 @@ header img {
   animation-delay: 200ms;
 }
 .load__bar--1-inv {
-  animation-delay: 995ms;
+  animation-delay: 335ms;
   animation-direction: alternate-reverse;
   background: #0e397f;
 }
@@ -273,7 +306,7 @@ header img {
   animation-delay: 400ms;
 }
 .load__bar--2-inv {
-  animation-delay: 1270ms;
+  animation-delay: 835ms;
   animation-direction: alternate-reverse;
   background: #0e397f;
 }
@@ -284,7 +317,7 @@ header img {
   animation-delay: 600ms;
 }
 .load__bar--3-inv {
-  animation-delay: 1035ms;
+  animation-delay: 1575ms;
   animation-direction: alternate-reverse;
   background: #0e397f;
 }
@@ -295,7 +328,7 @@ header img {
   animation-delay: 800ms;
 }
 .load__bar--4-inv {
-  animation-delay: 1100ms;
+  animation-delay: 1865ms;
   animation-direction: alternate-reverse;
   background: #0e397f;
 }
@@ -306,7 +339,7 @@ header img {
   animation-delay: 1000ms;
 }
 .load__bar--5-inv {
-  animation-delay: 2485ms;
+  animation-delay: 1495ms;
   animation-direction: alternate-reverse;
   background: #0e397f;
 }
@@ -316,7 +349,7 @@ header img {
 .load__bar--6 {
   animation-direction: alternate-reverse;
   background: pink;
-  animation-delay: 980ms;
+  animation-delay: 1220ms;
 }
 .load__bar--6:hover {
   animation-play-state: paused;
@@ -324,7 +357,7 @@ header img {
 .load__bar--7 {
   animation-direction: alternate-reverse;
   background: pink;
-  animation-delay: 980ms;
+  animation-delay: 1260ms;
 }
 .load__bar--7:hover {
   animation-play-state: paused;
@@ -332,7 +365,7 @@ header img {
 .load__bar--8 {
   animation-direction: alternate-reverse;
   background: pink;
-  animation-delay: 1140ms;
+  animation-delay: 2080ms;
 }
 .load__bar--8:hover {
   animation-play-state: paused;
@@ -340,7 +373,7 @@ header img {
 .load__bar--9 {
   animation-direction: alternate-reverse;
   background: pink;
-  animation-delay: 1580ms;
+  animation-delay: 1720ms;
 }
 .load__bar--9:hover {
   animation-play-state: paused;
@@ -348,7 +381,7 @@ header img {
 .load__bar--10 {
   animation-direction: alternate-reverse;
   background: pink;
-  animation-delay: 1300ms;
+  animation-delay: 2240ms;
 }
 .load__bar--10:hover {
   animation-play-state: paused;

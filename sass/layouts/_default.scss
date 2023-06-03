@@ -134,6 +134,7 @@ header {
     img {
       object-fit: cover;
       width: 100%;
+      height: 237px;
     }
     .card-content {
       padding-left: 13px;
@@ -158,10 +159,15 @@ header {
         position: relative;
         #coeur-vide {
           &:hover {
+            opacity: 0;
           }
         }
 
         #coeur-plein {
+          &:hover {
+            opacity: 1;
+          }
+          opacity: 0;
           position: absolute;
           left: 0px;
           top: 11px;
