@@ -1,4 +1,14 @@
 header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 63px;
+
+  i {
+    color: #353535;
+    margin-left: 32px;
+    position: absolute;
+  }
   .logo {
     margin: auto;
     display: block;
@@ -16,6 +26,10 @@ header {
     width: 375px;
   }
 }
+h1 {
+  font-family: "Shrikhand", cursive;
+  margin-left: 17px;
+}
 .menu {
   padding: 13px;
   background: #f6f6f6;
@@ -23,6 +37,39 @@ header {
   margin: -40px 0px 0px 0px;
   position: relative;
   border-radius: 35px;
+  .titre-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .coeur-menu {
+    position: relative;
+    .coeur-vide {
+      top: 2px;
+      position: absolute;
+      left: -66px;
+    }
+    .coeur-plein {
+      position: absolute;
+      opacity: 0;
+      left: -66px;
+      top: 2px;
+      background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+      // background: linear-gradient(
+      //   193.33deg,
+      //   #9356dc -11.44%,
+      //   #ff79da 123.93%
+      // );
+
+      &:hover {
+        transition-property: all;
+        transition-duration: 2s;
+        opacity: 1;
+
+        //   color: transparent;
+      }
+    }
+  }
   h2 {
     border-bottom: 3px solid #99e2d0;
     width: 40px;

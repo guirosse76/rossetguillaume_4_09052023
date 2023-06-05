@@ -196,6 +196,17 @@ footer i {
   padding-right: 0;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 63px;
+}
+header i {
+  color: #353535;
+  margin-left: 32px;
+  position: absolute;
+}
 header .logo {
   margin: auto;
   display: block;
@@ -211,6 +222,11 @@ header img {
   width: 375px;
 }
 
+h1 {
+  font-family: "Shrikhand", cursive;
+  margin-left: 17px;
+}
+
 .menu {
   padding: 13px;
   background: #f6f6f6;
@@ -218,6 +234,31 @@ header img {
   margin: -40px 0px 0px 0px;
   position: relative;
   border-radius: 35px;
+}
+.menu .titre-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu .coeur-menu {
+  position: relative;
+}
+.menu .coeur-menu .coeur-vide {
+  top: 2px;
+  position: absolute;
+  left: -66px;
+}
+.menu .coeur-menu .coeur-plein {
+  position: absolute;
+  opacity: 0;
+  left: -66px;
+  top: 2px;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+}
+.menu .coeur-menu .coeur-plein:hover {
+  transition-property: all;
+  transition-duration: 2s;
+  opacity: 1;
 }
 .menu h2 {
   border-bottom: 3px solid #99e2d0;
