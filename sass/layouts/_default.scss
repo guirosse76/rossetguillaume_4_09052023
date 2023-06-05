@@ -60,6 +60,10 @@ header {
     font-size: 16px;
     padding: 13px 18.75px;
     border: 0;
+    &:hover {
+      filter: brightness(1.2);
+      box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.25);
+    }
   }
 }
 
@@ -157,20 +161,29 @@ header {
       .coeur {
         padding-right: 25px;
         position: relative;
-        #coeur-vide {
-          &:hover {
-            opacity: 0;
-          }
-        }
-
-        #coeur-plein {
-          &:hover {
-            opacity: 1;
-          }
-          opacity: 0;
+        .coeur-plein {
           position: absolute;
+          opacity: 0;
           left: 0px;
-          top: 11px;
+          top: 10px;
+          background: linear-gradient(
+            193.33deg,
+            #9356dc -11.44%,
+            #ff79da 123.93%
+          );
+          // background: linear-gradient(
+          //   193.33deg,
+          //   #9356dc -11.44%,
+          //   #ff79da 123.93%
+          // );
+
+          &:hover {
+            transition-property: all;
+            transition-duration: 2s;
+            opacity: 1;
+
+            //   color: transparent;
+          }
         }
       }
     }

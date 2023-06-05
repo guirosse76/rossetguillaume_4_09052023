@@ -27,6 +27,10 @@ header {
     background: #f7f7f7;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
+    i {
+      opacity: 0;
+    }
+
     .choix {
       display: flex;
       align-items: center;
@@ -35,29 +39,45 @@ header {
       .prix {
         font-weight: bold;
         p {
-          position: absolute;
-          margin-top: 9px;
+          margin-top: 27px;
+          margin-bottom: 0px;
+          margin-left: 31px;
         }
       }
       .texte-choix {
+        margin-top: 6px;
+        margin-bottom: 6px;
         h3 {
           margin: 0;
         }
         p {
           margin-bottom: 0px;
-          margin-top: 5px;
+          margin-top: 1px;
         }
       }
+    }
+
+    &:hover {
       .valide {
+        transition-property: all;
+        transition-duration: 2s;
         background: #99e2d0;
         border-radius: 0px 15px 15px 0px;
-        width: 59px;
         height: 69px;
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 20%;
+        i {
+          opacity: 1;
+        }
       }
     }
+    // &:active {
+    //   .valide {
+    //     opacity: 1;
+    //   }
+    // }
   }
   .bouton-commander {
     display: flex;
@@ -74,6 +94,10 @@ header {
       font-size: 16px;
       width: 186px;
       border: 0;
+      &:hover {
+        filter: brightness(1.2);
+        box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.25);
+      }
     }
   }
 }

@@ -56,6 +56,10 @@ header img {
   padding: 13px 18.75px;
   border: 0;
 }
+.exploration button:hover {
+  filter: brightness(1.2);
+  box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.25);
+}
 
 .fonctionnement {
   padding: 20px;
@@ -151,16 +155,16 @@ header img {
   padding-right: 25px;
   position: relative;
 }
-.restaurants .card .card-content .coeur #coeur-vide:hover {
-  opacity: 0;
-}
-.restaurants .card .card-content .coeur #coeur-plein {
-  opacity: 0;
+.restaurants .card .card-content .coeur .coeur-plein {
   position: absolute;
+  opacity: 0;
   left: 0px;
-  top: 11px;
+  top: 10px;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
 }
-.restaurants .card .card-content .coeur #coeur-plein:hover {
+.restaurants .card .card-content .coeur .coeur-plein:hover {
+  transition-property: all;
+  transition-duration: 2s;
   opacity: 1;
 }
 
@@ -220,6 +224,9 @@ header img {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
 }
+.menu article i {
+  opacity: 0;
+}
 .menu article .choix {
   display: flex;
   align-items: center;
@@ -230,24 +237,34 @@ header img {
   font-weight: bold;
 }
 .menu article .choix .prix p {
-  position: absolute;
-  margin-top: 9px;
+  margin-top: 27px;
+  margin-bottom: 0px;
+  margin-left: 31px;
+}
+.menu article .choix .texte-choix {
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 .menu article .choix .texte-choix h3 {
   margin: 0;
 }
 .menu article .choix .texte-choix p {
   margin-bottom: 0px;
-  margin-top: 5px;
+  margin-top: 1px;
 }
-.menu article .choix .valide {
+.menu article:hover .valide {
+  transition-property: all;
+  transition-duration: 2s;
   background: #99e2d0;
   border-radius: 0px 15px 15px 0px;
-  width: 59px;
   height: 69px;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 20%;
+}
+.menu article:hover .valide i {
+  opacity: 1;
 }
 .menu .bouton-commander {
   display: flex;
@@ -266,9 +283,14 @@ header img {
   width: 186px;
   border: 0;
 }
+.menu .bouton-commander button:hover {
+  filter: brightness(1.2);
+  box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.25);
+}
 
 .container-loader {
-  height: 100%;
+  height: 800px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -289,102 +311,8 @@ header img {
   background-color: #15dea5;
   height: 100%;
   width: 3vh;
-  animation: bars 1000ms backwards infinite alternate ease-in-out;
-}
-.load__bar--1 {
-  animation-delay: 200ms;
-}
-.load__bar--1-inv {
-  animation-delay: 335ms;
-  animation-direction: alternate-reverse;
-  background: #0e397f;
-}
-.load__bar--1-inv:hover {
-  animation-play-state: paused;
-}
-.load__bar--2 {
-  animation-delay: 400ms;
-}
-.load__bar--2-inv {
-  animation-delay: 835ms;
-  animation-direction: alternate-reverse;
-  background: #0e397f;
-}
-.load__bar--2-inv:hover {
-  animation-play-state: paused;
-}
-.load__bar--3 {
-  animation-delay: 600ms;
-}
-.load__bar--3-inv {
-  animation-delay: 1575ms;
-  animation-direction: alternate-reverse;
-  background: #0e397f;
-}
-.load__bar--3-inv:hover {
-  animation-play-state: paused;
-}
-.load__bar--4 {
-  animation-delay: 800ms;
-}
-.load__bar--4-inv {
-  animation-delay: 1865ms;
-  animation-direction: alternate-reverse;
-  background: #0e397f;
-}
-.load__bar--4-inv:hover {
-  animation-play-state: paused;
-}
-.load__bar--5 {
-  animation-delay: 1000ms;
-}
-.load__bar--5-inv {
-  animation-delay: 1495ms;
-  animation-direction: alternate-reverse;
-  background: #0e397f;
-}
-.load__bar--5-inv:hover {
-  animation-play-state: paused;
-}
-.load__bar--6 {
-  animation-direction: alternate-reverse;
-  background: pink;
-  animation-delay: 1220ms;
-}
-.load__bar--6:hover {
-  animation-play-state: paused;
-}
-.load__bar--7 {
-  animation-direction: alternate-reverse;
-  background: pink;
-  animation-delay: 1260ms;
-}
-.load__bar--7:hover {
-  animation-play-state: paused;
-}
-.load__bar--8 {
-  animation-direction: alternate-reverse;
-  background: pink;
-  animation-delay: 2080ms;
-}
-.load__bar--8:hover {
-  animation-play-state: paused;
-}
-.load__bar--9 {
-  animation-direction: alternate-reverse;
-  background: pink;
-  animation-delay: 1720ms;
-}
-.load__bar--9:hover {
-  animation-play-state: paused;
-}
-.load__bar--10 {
-  animation-direction: alternate-reverse;
-  background: pink;
-  animation-delay: 2240ms;
-}
-.load__bar--10:hover {
-  animation-play-state: paused;
+  animation: bars 3s alternate ease-in-out;
+  animation-fill-mode: forwards;
 }
 
 @keyframes bars {
@@ -393,6 +321,7 @@ header img {
   }
   100% {
     transform: scaleY(1);
+    visibility: hidden;
   }
 }
 
