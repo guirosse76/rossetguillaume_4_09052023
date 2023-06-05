@@ -229,21 +229,22 @@ header img {
 }
 .menu article .choix {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding-left: 12px;
+  margin-bottom: 12px;
+  height: 69px;
 }
 .menu article .choix .prix {
   font-weight: bold;
+  margin-top: 31px;
+  width: 10%;
 }
 .menu article .choix .prix p {
-  margin-top: 27px;
-  margin-bottom: 0px;
-  margin-left: 31px;
+  margin: 0;
 }
 .menu article .choix .texte-choix {
-  margin-top: 6px;
-  margin-bottom: 6px;
+  margin-top: 12px;
+  width: 90%;
+  text-overflow: ellipsis;
 }
 .menu article .choix .texte-choix h3 {
   margin: 0;
@@ -251,6 +252,9 @@ header img {
 .menu article .choix .texte-choix p {
   margin-bottom: 0px;
   margin-top: 1px;
+}
+.menu article:hover .prix {
+  margin-right: 25px;
 }
 .menu article:hover .valide {
   transition-property: transform;
