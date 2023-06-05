@@ -253,8 +253,10 @@ header img {
   margin-top: 1px;
 }
 .menu article:hover .valide {
-  transition-property: all;
-  transition-duration: 2s;
+  transition-property: transform;
+  transition-duration: 1s;
+  margin-right: -12px;
+  transform: translatex(-18%);
   background: #99e2d0;
   border-radius: 0px 15px 15px 0px;
   height: 69px;
