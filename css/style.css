@@ -40,6 +40,8 @@ header img {
 }
 .exploration h1 {
   margin: 0;
+  font-weight: 700;
+  font-family: Roboto;
 }
 .exploration .sous-titreH1 {
   font-weight: 300;
@@ -226,27 +228,6 @@ footer i {
   animation-duration: 1s;
   animation-delay: 0.7s;
 }
-.anim-4 {
-  animation-delay: 0.4s;
-}
-.anim-5 {
-  animation-delay: 0.5s;
-}
-.anim-6 {
-  animation-delay: 0.6s;
-}
-.anim-7 {
-  animation-delay: 0.7s;
-}
-.anim-8 {
-  animation-delay: 0.8s;
-}
-.anim-9 {
-  animation-delay: 0.9s;
-}
-.anim-10 {
-  animation-delay: 1s;
-}
 
 header {
   display: flex;
@@ -431,6 +412,59 @@ h1 {
   100% {
     transform: scaleY(1);
     visibility: hidden;
+  }
+}
+@media (min-width: 1400px) {
+  .exploration h1 {
+    font-size: 40px;
+  }
+  .fonctionnement {
+    margin-bottom: 80px;
+    padding: 0;
+  }
+  .fonctionnement h2 {
+    margin-left: 180px;
+  }
+  .fonctionnement ul {
+    display: flex;
+    gap: 36px;
+    margin-left: 180px;
+  }
+  .fonctionnement li {
+    margin-bottom: 0px;
+  }
+  .restaurants {
+    background-color: #f6f6f6;
+    padding: 0px 180px;
+  }
+  .restaurants img {
+    height: 231px;
+  }
+  .restaurants .restaurants-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 68px;
+  }
+  .restaurants .card {
+    width: 46%;
+  }
+  .restaurants .card .nouveau {
+    position: absolute;
+    left: 640px;
+  }
+  .restaurants .card .nouveau2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #99e2d0;
+    width: 80px;
+    right: 235px;
+    height: 29px;
+    margin-top: 20px;
+    color: #008766;
+    font-weight: 500;
   }
 }
 

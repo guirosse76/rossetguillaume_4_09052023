@@ -1,0 +1,57 @@
+// XX-Large devices (desktops, 1440px and up)
+
+@media (min-width: 1400px) {
+  .exploration h1 {
+    font-size: 40px;
+  }
+
+  .fonctionnement {
+    margin-bottom: 80px;
+    padding: 0;
+    h2 {
+      margin-left: 180px;
+    }
+    ul {
+      display: flex;
+      gap: 36px;
+      margin-left: 180px;
+    }
+    li {
+      margin-bottom: 0px;
+    }
+  }
+
+  .restaurants {
+    background-color: #f6f6f6;
+    padding: 0px 180px;
+    img {
+      height: 231px;
+    }
+    .restaurants-cards {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 68px;
+    }
+    .card {
+      width: 46%;
+      .nouveau {
+        position: absolute;
+        left: 640px;
+      }
+      .nouveau2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        background-color: #99e2d0;
+        width: 80px;
+        right: 235px;
+        height: 29px;
+        margin-top: 20px;
+        color: #008766;
+        font-weight: 500;
+      }
+    }
+  }
+}
