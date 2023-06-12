@@ -61,7 +61,7 @@ header img {
 }
 .exploration button:hover {
   filter: brightness(1.2);
-  box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
 }
 
 .fonctionnement {
@@ -157,13 +157,22 @@ header img {
 .restaurants .card .card-content .coeur {
   padding-right: 25px;
   position: relative;
+  font-size: 23px;
+}
+.restaurants .card .card-content .coeur .coeur-vide {
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
 .restaurants .card .card-content .coeur .coeur-plein {
   position: absolute;
   opacity: 0;
   left: 0px;
-  top: 10px;
-  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  top: 0px;
+  background: -webkit-linear-gradient(top, red 30%, blue 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .restaurants .card .card-content .coeur .coeur-plein:hover {
   transition-property: all;
@@ -302,9 +311,6 @@ h1 {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
 }
-.menu article i {
-  opacity: 0;
-}
 .menu article .choix {
   display: flex;
   padding-left: 9px;
@@ -314,7 +320,7 @@ h1 {
 .menu article .choix .prix {
   font-weight: bold;
   margin-top: 36px;
-  width: 5%;
+  width: 10%;
 }
 .menu article .choix .prix p {
   margin: 0;
@@ -322,39 +328,46 @@ h1 {
 .menu article .choix .texte-choix {
   margin-top: 12px;
   width: 90%;
+  transition: all 1s;
 }
 .menu article .choix .texte-choix h3 {
   margin: 0;
-}
-.menu article .choix .texte-choix p {
-  margin-bottom: 0px;
-  margin-top: 1px;
-}
-.menu article:hover .prix {
-  margin-right: 25px;
-}
-.menu article:hover h3,
-.menu article:hover p {
-  width: 240px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
-.menu article:hover .valide {
-  transition-property: transform;
-  transition-duration: 1s;
-  margin-right: -12px;
-  transform: translatex(-18%);
+.menu article .choix .texte-choix p {
+  margin-bottom: 0px;
+  margin-top: 1px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.menu article .valide {
   background: #99e2d0;
   border-radius: 0px 15px 15px 0px;
-  height: 69px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 0%;
+  transition: all 1s;
+}
+.menu article i {
+  opacity: 0;
+  transition: all 1s;
+}
+.menu article:hover .valide {
+  transition: all 1s;
   width: 20%;
 }
 .menu article:hover .valide i {
+  transition: all 1s;
   opacity: 1;
+}
+.menu article:hover .texte-choix {
+  transition: all 1s;
+  width: 70%;
 }
 .menu .bouton-commander {
   display: flex;
@@ -379,12 +392,17 @@ h1 {
 }
 
 .container-loader {
-  height: 800px;
+  height: 100%;
   width: 100%;
+  z-index: 1;
+  background: white;
+  position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  animation: display 3s;
+  animation-fill-mode: forwards;
 }
 .container-loader span {
   margin: 1rem;
@@ -401,8 +419,107 @@ h1 {
   background-color: #15dea5;
   height: 100%;
   width: 3vh;
-  animation: bars 3s alternate ease-in-out;
+  animation: bars 1000ms forwards infinite alternate ease-in-out;
+}
+.load__bar--1 {
+  animation-delay: 10ms;
+}
+.load__bar--1-inv {
+  animation-delay: 715ms;
+  animation-direction: alternate-reverse;
   animation-fill-mode: forwards;
+  background: #0e397f;
+}
+.load__bar--1-inv:hover {
+  animation-play-state: paused;
+}
+.load__bar--2 {
+  animation-delay: 20ms;
+}
+.load__bar--2-inv {
+  animation-delay: 1280ms;
+  animation-direction: alternate-reverse;
+  animation-fill-mode: forwards;
+  background: #0e397f;
+}
+.load__bar--2-inv:hover {
+  animation-play-state: paused;
+}
+.load__bar--3 {
+  animation-delay: 30ms;
+}
+.load__bar--3-inv {
+  animation-delay: 1380ms;
+  animation-direction: alternate-reverse;
+  animation-fill-mode: forwards;
+  background: #0e397f;
+}
+.load__bar--3-inv:hover {
+  animation-play-state: paused;
+}
+.load__bar--4 {
+  animation-delay: 40ms;
+}
+.load__bar--4-inv {
+  animation-delay: 1435ms;
+  animation-direction: alternate-reverse;
+  animation-fill-mode: forwards;
+  background: #0e397f;
+}
+.load__bar--4-inv:hover {
+  animation-play-state: paused;
+}
+.load__bar--5 {
+  animation-delay: 50ms;
+}
+.load__bar--5-inv {
+  animation-delay: 860ms;
+  animation-direction: alternate-reverse;
+  animation-fill-mode: forwards;
+  background: #0e397f;
+}
+.load__bar--5-inv:hover {
+  animation-play-state: paused;
+}
+.load__bar--6 {
+  animation-direction: alternate-reverse;
+  background: pink;
+  animation-delay: 90ms;
+}
+.load__bar--6:hover {
+  animation-play-state: paused;
+}
+.load__bar--7 {
+  animation-direction: alternate-reverse;
+  background: pink;
+  animation-delay: 320ms;
+}
+.load__bar--7:hover {
+  animation-play-state: paused;
+}
+.load__bar--8 {
+  animation-direction: alternate-reverse;
+  background: pink;
+  animation-delay: 1410ms;
+}
+.load__bar--8:hover {
+  animation-play-state: paused;
+}
+.load__bar--9 {
+  animation-direction: alternate-reverse;
+  background: pink;
+  animation-delay: 1280ms;
+}
+.load__bar--9:hover {
+  animation-play-state: paused;
+}
+.load__bar--10 {
+  animation-direction: alternate-reverse;
+  background: pink;
+  animation-delay: 630ms;
+}
+.load__bar--10:hover {
+  animation-play-state: paused;
 }
 
 @keyframes bars {
@@ -411,6 +528,13 @@ h1 {
   }
   100% {
     transform: scaleY(1);
+  }
+}
+@keyframes display {
+  0% {
+    visibility: visible;
+  }
+  100% {
     visibility: hidden;
   }
 }
@@ -419,7 +543,7 @@ h1 {
     font-size: 40px;
   }
   .fonctionnement {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
     padding: 0;
   }
   .fonctionnement h2 {
@@ -432,10 +556,14 @@ h1 {
   }
   .fonctionnement li {
     margin-bottom: 0px;
+    width: 300px;
   }
   .restaurants {
     background-color: #f6f6f6;
     padding: 0px 180px;
+  }
+  .restaurants .restaurants-titre {
+    margin-top: 30px;
   }
   .restaurants img {
     height: 231px;
@@ -465,6 +593,10 @@ h1 {
     margin-top: 20px;
     color: #008766;
     font-weight: 500;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
   }
 }
 

@@ -114,9 +114,6 @@ h1 {
     background: #f7f7f7;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
-    i {
-      opacity: 0;
-    }
 
     .choix {
       display: flex;
@@ -126,7 +123,7 @@ h1 {
       .prix {
         font-weight: bold;
         margin-top: 36px;
-        width: 5%;
+        width: 10%;
         p {
           margin: 0;
         }
@@ -135,43 +132,54 @@ h1 {
         margin-top: 12px;
         // margin-bottom: 6px;
         width: 90%;
+        transition: all 1s;
 
         h3 {
           margin: 0;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
         }
         p {
           margin-bottom: 0px;
           margin-top: 1px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
         }
       }
     }
 
+    .valide {
+      background: #99e2d0;
+      border-radius: 0px 15px 15px 0px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 0%;
+      transition: all 1s;
+    }
+
+    i {
+      opacity: 0;
+      transition: all 1s;
+    }
+
     &:hover {
-      .prix {
-        margin-right: 25px;
-      }
-      h3,
-      p {
-        width: 240px;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
-      }
       .valide {
-        transition-property: transform;
-        transition-duration: 1s;
-        margin-right: -12px;
-        transform: translatex(-18%);
-        background: #99e2d0;
-        border-radius: 0px 15px 15px 0px;
-        height: 69px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        transition: all 1s;
+        // margin-right: -12px;
+        // transform: translatex(-18%);
         width: 20%;
         i {
+          transition: all 1s;
           opacity: 1;
         }
+      }
+      .texte-choix {
+        transition: all 1s;
+        width: 70%;
       }
     }
     // &:active {
