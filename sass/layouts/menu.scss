@@ -37,27 +37,18 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 63px;
-
   i {
     color: #353535;
     margin-left: 32px;
-    position: absolute;
-  }
-  .logo {
-    margin: auto;
-    display: block;
-    width: 197px;
-    margin-top: 14px;
-  }
-  img {
-    width: 100%;
+    font-size: 20px;
   }
 }
 
 .image-header {
   img {
     height: 275px;
-    width: 375px;
+    object-fit: cover;
+    width: 100%;
   }
 }
 
@@ -78,31 +69,61 @@ h1 {
     align-items: center;
     justify-content: space-between;
   }
+  // .coeur-menu {
+  //   position: relative;
+  //   .coeur-vide {
+  //     top: 2px;
+  //     position: absolute;
+  //     left: -66px;
+  //   }
+  //   .coeur-plein {
+  //     position: absolute;
+  //     opacity: 0;
+  //     left: -66px;
+  //     top: 2px;
+  //     background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  //     // background: linear-gradient(
+  //     //   193.33deg,
+  //     //   #9356dc -11.44%,
+  //     //   #ff79da 123.93%
+  //     // );
+
+  //     &:hover {
+  //       transition-property: all;
+  //       transition-duration: 2s;
+  //       opacity: 1;
+
+  //       //   color: transparent;
+  //     }
+  //   }
+  // }
   .coeur-menu {
+    padding-right: 25px;
     position: relative;
+    font-size: 25px;
     .coeur-vide {
-      top: 2px;
       position: absolute;
-      left: -66px;
+      right: 35px;
+      top: -10px;
     }
     .coeur-plein {
       position: absolute;
       opacity: 0;
-      left: -66px;
-      top: 2px;
-      background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
-      // background: linear-gradient(
-      //   193.33deg,
-      //   #9356dc -11.44%,
-      //   #ff79da 123.93%
-      // );
+      right: 35px;
+      top: -10px;
+      background: -webkit-linear-gradient(
+        193.33deg,
+        #9356dc -11.44%,
+        #ff79da 123.93%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
 
       &:hover {
         transition-property: all;
         transition-duration: 2s;
         opacity: 1;
-
-        //   color: transparent;
       }
     }
   }

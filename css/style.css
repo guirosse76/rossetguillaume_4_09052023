@@ -24,9 +24,15 @@ header img {
   justify-content: center;
   align-items: center;
   gap: 17px;
+  height: 50px;
 }
-.recherche p {
+.recherche input {
   font-weight: 500;
+  text-align: center;
+  border: 0px;
+  background-color: transparent;
+  width: 115px;
+  text-decoration: #353535;
 }
 .recherche i {
   color: #353535;
@@ -169,7 +175,7 @@ header img {
   opacity: 0;
   left: 0px;
   top: 0px;
-  background: -webkit-linear-gradient(top, red 30%, blue 70%);
+  background: -webkit-linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -247,21 +253,13 @@ header {
 header i {
   color: #353535;
   margin-left: 32px;
-  position: absolute;
-}
-header .logo {
-  margin: auto;
-  display: block;
-  width: 197px;
-  margin-top: 14px;
-}
-header img {
-  width: 100%;
+  font-size: 20px;
 }
 
 .image-header img {
   height: 275px;
-  width: 375px;
+  object-fit: cover;
+  width: 100%;
 }
 
 h1 {
@@ -283,19 +281,24 @@ h1 {
   justify-content: space-between;
 }
 .menu .coeur-menu {
+  padding-right: 25px;
   position: relative;
+  font-size: 25px;
 }
 .menu .coeur-menu .coeur-vide {
-  top: 2px;
   position: absolute;
-  left: -66px;
+  right: 35px;
+  top: -10px;
 }
 .menu .coeur-menu .coeur-plein {
   position: absolute;
   opacity: 0;
-  left: -66px;
-  top: 2px;
-  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  right: 35px;
+  top: -10px;
+  background: -webkit-linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .menu .coeur-menu .coeur-plein:hover {
   transition-property: all;
@@ -419,13 +422,13 @@ h1 {
   background-color: #15dea5;
   height: 100%;
   width: 3vh;
-  animation: bars 1000ms forwards infinite alternate ease-in-out;
+  animation: bars 1000ms backwards infinite alternate ease-in-out;
 }
 .load__bar--1 {
-  animation-delay: 10ms;
+  animation-delay: 200ms;
 }
 .load__bar--1-inv {
-  animation-delay: 715ms;
+  animation-delay: 1175ms;
   animation-direction: alternate-reverse;
   animation-fill-mode: forwards;
   background: #0e397f;
@@ -434,10 +437,10 @@ h1 {
   animation-play-state: paused;
 }
 .load__bar--2 {
-  animation-delay: 20ms;
+  animation-delay: 400ms;
 }
 .load__bar--2-inv {
-  animation-delay: 1280ms;
+  animation-delay: 1825ms;
   animation-direction: alternate-reverse;
   animation-fill-mode: forwards;
   background: #0e397f;
@@ -446,10 +449,10 @@ h1 {
   animation-play-state: paused;
 }
 .load__bar--3 {
-  animation-delay: 30ms;
+  animation-delay: 600ms;
 }
 .load__bar--3-inv {
-  animation-delay: 1380ms;
+  animation-delay: 900ms;
   animation-direction: alternate-reverse;
   animation-fill-mode: forwards;
   background: #0e397f;
@@ -458,10 +461,10 @@ h1 {
   animation-play-state: paused;
 }
 .load__bar--4 {
-  animation-delay: 40ms;
+  animation-delay: 800ms;
 }
 .load__bar--4-inv {
-  animation-delay: 1435ms;
+  animation-delay: 2045ms;
   animation-direction: alternate-reverse;
   animation-fill-mode: forwards;
   background: #0e397f;
@@ -470,10 +473,10 @@ h1 {
   animation-play-state: paused;
 }
 .load__bar--5 {
-  animation-delay: 50ms;
+  animation-delay: 1000ms;
 }
 .load__bar--5-inv {
-  animation-delay: 860ms;
+  animation-delay: 1570ms;
   animation-direction: alternate-reverse;
   animation-fill-mode: forwards;
   background: #0e397f;
@@ -484,7 +487,7 @@ h1 {
 .load__bar--6 {
   animation-direction: alternate-reverse;
   background: pink;
-  animation-delay: 90ms;
+  animation-delay: 2100ms;
 }
 .load__bar--6:hover {
   animation-play-state: paused;
@@ -492,7 +495,7 @@ h1 {
 .load__bar--7 {
   animation-direction: alternate-reverse;
   background: pink;
-  animation-delay: 320ms;
+  animation-delay: 2140ms;
 }
 .load__bar--7:hover {
   animation-play-state: paused;
@@ -500,7 +503,7 @@ h1 {
 .load__bar--8 {
   animation-direction: alternate-reverse;
   background: pink;
-  animation-delay: 1410ms;
+  animation-delay: 660ms;
 }
 .load__bar--8:hover {
   animation-play-state: paused;
@@ -508,7 +511,7 @@ h1 {
 .load__bar--9 {
   animation-direction: alternate-reverse;
   background: pink;
-  animation-delay: 1280ms;
+  animation-delay: 2580ms;
 }
 .load__bar--9:hover {
   animation-play-state: paused;
@@ -516,7 +519,7 @@ h1 {
 .load__bar--10 {
   animation-direction: alternate-reverse;
   background: pink;
-  animation-delay: 630ms;
+  animation-delay: 1840ms;
 }
 .load__bar--10:hover {
   animation-play-state: paused;
