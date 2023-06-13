@@ -189,6 +189,8 @@ header img {
 footer {
   background-color: #353535;
   color: white;
+  padding-top: 22px;
+  padding-bottom: 22px;
 }
 footer .titre-footer {
   font-family: "Shrikhand", cursive;
@@ -200,6 +202,9 @@ footer a {
   font-weight: 500;
 }
 footer ul {
+  padding-left: 25px;
+}
+footer ul #footer-logo {
   margin: 0;
   padding: 22px;
 }
@@ -428,7 +433,7 @@ h1 {
   animation-delay: 200ms;
 }
 .load__bar--1-inv {
-  animation-delay: 1175ms;
+  animation-delay: 620ms;
   animation-direction: alternate-reverse;
   animation-fill-mode: forwards;
   background: #0e397f;
@@ -440,7 +445,7 @@ h1 {
   animation-delay: 400ms;
 }
 .load__bar--2-inv {
-  animation-delay: 1825ms;
+  animation-delay: 580ms;
   animation-direction: alternate-reverse;
   animation-fill-mode: forwards;
   background: #0e397f;
@@ -452,7 +457,7 @@ h1 {
   animation-delay: 600ms;
 }
 .load__bar--3-inv {
-  animation-delay: 900ms;
+  animation-delay: 660ms;
   animation-direction: alternate-reverse;
   animation-fill-mode: forwards;
   background: #0e397f;
@@ -464,7 +469,7 @@ h1 {
   animation-delay: 800ms;
 }
 .load__bar--4-inv {
-  animation-delay: 2045ms;
+  animation-delay: 1910ms;
   animation-direction: alternate-reverse;
   animation-fill-mode: forwards;
   background: #0e397f;
@@ -476,7 +481,7 @@ h1 {
   animation-delay: 1000ms;
 }
 .load__bar--5-inv {
-  animation-delay: 1570ms;
+  animation-delay: 1840ms;
   animation-direction: alternate-reverse;
   animation-fill-mode: forwards;
   background: #0e397f;
@@ -487,7 +492,7 @@ h1 {
 .load__bar--6 {
   animation-direction: alternate-reverse;
   background: pink;
-  animation-delay: 2100ms;
+  animation-delay: 1640ms;
 }
 .load__bar--6:hover {
   animation-play-state: paused;
@@ -495,7 +500,7 @@ h1 {
 .load__bar--7 {
   animation-direction: alternate-reverse;
   background: pink;
-  animation-delay: 2140ms;
+  animation-delay: 840ms;
 }
 .load__bar--7:hover {
   animation-play-state: paused;
@@ -503,7 +508,7 @@ h1 {
 .load__bar--8 {
   animation-direction: alternate-reverse;
   background: pink;
-  animation-delay: 660ms;
+  animation-delay: 2280ms;
 }
 .load__bar--8:hover {
   animation-play-state: paused;
@@ -511,7 +516,7 @@ h1 {
 .load__bar--9 {
   animation-direction: alternate-reverse;
   background: pink;
-  animation-delay: 2580ms;
+  animation-delay: 2320ms;
 }
 .load__bar--9:hover {
   animation-play-state: paused;
@@ -519,7 +524,7 @@ h1 {
 .load__bar--10 {
   animation-direction: alternate-reverse;
   background: pink;
-  animation-delay: 1840ms;
+  animation-delay: 1220ms;
 }
 .load__bar--10:hover {
   animation-play-state: paused;
@@ -599,7 +604,16 @@ h1 {
   }
   .footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
+  }
+  .footer ul {
+    display: flex;
+    gap: 35px;
+    padding-left: 80px;
+  }
+  .footer ul .titre-footer {
+    padding-bottom: 5px;
+    margin-right: 58px;
   }
 }
 
