@@ -166,17 +166,17 @@ header {
       .coeur {
         padding-right: 25px;
         position: relative;
-        font-size: 23px;
+        font-size: 27px;
         .coeur-vide {
           position: absolute;
-          left: 0px;
-          top: 0px;
+          right: 25px;
+          top: -14px;
         }
         .coeur-plein {
           position: absolute;
           opacity: 0;
-          left: 0px;
-          top: 0px;
+          right: 25px;
+          top: -14px;
           background: -webkit-linear-gradient(
             193.33deg,
             #9356dc -11.44%,

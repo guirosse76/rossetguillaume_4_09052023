@@ -6,10 +6,10 @@
   }
 
   .fonctionnement {
-    margin-bottom: 50px;
     padding: 0;
     h2 {
       margin-left: 180px;
+      margin-top: 50px;
     }
     ul {
       display: flex;
@@ -22,12 +22,42 @@
       width: 300px;
     }
   }
+  .menu {
+    width: 45%;
+    margin-left: 193px;
+    padding-left: 210px;
+    padding-right: 211px;
+    h1 {
+      margin-top: 51px;
+    }
+    .titre-menu {
+      display: flex;
+      justify-content: center;
+    }
+    .coeur-menu {
+      .coeur-vide {
+        left: 60px;
+        top: 4px;
+      }
+      .coeur-plein {
+        left: 60px;
+        top: 4px;
+      }
+    }
+  }
+
+  .bouton-commander {
+    button {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+  }
 
   .restaurants {
     background-color: #f6f6f6;
-    padding: 0px 180px;
-    .restaurants-titre {
-      margin-top: 30px;
+    padding: 30px 180px;
+    h2 {
+      margin-top: 0px;
     }
     img {
       height: 231px;
@@ -42,7 +72,7 @@
       width: 46%;
       .nouveau {
         position: absolute;
-        left: 640px;
+        left: 559px;
       }
       .nouveau2 {
         display: flex;
