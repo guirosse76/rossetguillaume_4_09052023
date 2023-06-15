@@ -54,7 +54,7 @@ header {
 
   .sous-titreH1 {
     font-weight: 300;
-    padding: 0px, 58px;
+    padding: 0px 58px;
   }
 
   button {
@@ -127,6 +127,19 @@ header {
       position: relative;
     }
     .nouveau {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      background-color: #99e2d0;
+      width: 80px;
+      right: 37px;
+      height: 29px;
+      margin-top: 20px;
+      color: #008766;
+      font-weight: 500;
+    }
+    .nouveau2 {
       display: flex;
       align-items: center;
       justify-content: center;

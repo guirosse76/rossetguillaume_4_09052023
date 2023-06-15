@@ -23,7 +23,7 @@ $size: 3vh;
 $anim-dur: 1000ms;
 $anim-delay: 200ms;
 
-$cd-bars-inv: #0e397f;
+$cd-bars-inv: #9356dc;
 
 .load {
   width: $size * 10;
@@ -33,7 +33,7 @@ $cd-bars-inv: #0e397f;
   margin-bottom: 0;
 
   &__bar {
-    background-color: #15dea5;
+    background-color: #99e2d0;
     height: 100%;
     width: $size;
     animation: bars $anim-dur backwards infinite alternate ease-in-out;
