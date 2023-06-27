@@ -33,55 +33,49 @@
       display: flex;
       justify-content: center;
     }
-    .coeur-menu {
-      .coeur-vide {
-        left: 60px;
-        top: 4px;
+    .coeur {
+      left: 100px;
+      top: 12px;
+    }
+
+    .bouton-commander {
+      button {
+        margin-top: 40px;
+        margin-bottom: 40px;
       }
-      .coeur-plein {
-        left: 60px;
-        top: 4px;
+    }
+
+    .restaurants {
+      background-color: #f6f6f6;
+      padding: 30px 180px;
+      h2 {
+        margin-top: 0px;
+      }
+      img {
+        height: 231px;
+      }
+      .restaurants-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 68px;
+      }
+      .card {
+        width: 46%;
       }
     }
-  }
 
-  .bouton-commander {
-    button {
-      margin-top: 40px;
-      margin-bottom: 40px;
-    }
-  }
-
-  .restaurants {
-    background-color: #f6f6f6;
-    padding: 30px 180px;
-    h2 {
-      margin-top: 0px;
-    }
-    img {
-      height: 231px;
-    }
-    .restaurants-cards {
+    .footer {
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 68px;
-    }
-    .card {
-      width: 46%;
-    }
-  }
-
-  .footer {
-    display: flex;
-    flex-direction: row-reverse;
-    ul {
-      display: flex;
-      gap: 35px;
-      padding-left: 80px;
-      .titre-footer {
-        padding-bottom: 5px;
-        margin-right: 58px;
+      flex-direction: row-reverse;
+      ul {
+        display: flex;
+        gap: 35px;
+        padding-left: 80px;
+        .titre-footer {
+          padding-bottom: 5px;
+          margin-right: 58px;
+        }
       }
     }
   }

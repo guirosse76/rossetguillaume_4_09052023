@@ -298,17 +298,17 @@ h1 {
   align-items: center;
   justify-content: space-between;
 }
-.menu .coeur-menu {
+.menu .coeur {
   padding-right: 25px;
   position: relative;
   font-size: 25px;
 }
-.menu .coeur-menu .coeur-vide {
+.menu .coeur .coeur-vide {
   position: absolute;
   right: 35px;
   top: -10px;
 }
-.menu .coeur-menu .coeur-plein {
+.menu .coeur .coeur-plein {
   position: absolute;
   opacity: 0;
   right: 35px;
@@ -318,7 +318,7 @@ h1 {
   -webkit-background-clip: text;
   color: transparent;
 }
-.menu .coeur-menu .coeur-plein:hover {
+.menu .coeur .coeur-plein:hover {
   transition-property: all;
   transition-duration: 2s;
   opacity: 1;
@@ -442,13 +442,13 @@ h1 {
   background-color: #99e2d0;
   height: 100%;
   width: 3vh;
-  animation: bars 1000ms backwards infinite alternate ease-in-out;
+  animation: bars 3000ms backwards infinite alternate ease-in-out;
 }
 .load__bar--1 {
   animation-delay: 200ms;
 }
 .load__bar--1-inv {
-  animation-delay: 1085ms;
+  animation-delay: 1160ms;
   animation-direction: alternate-reverse;
   animation-fill-mode: forwards;
   background: #9356dc;
@@ -472,7 +472,7 @@ h1 {
   animation-delay: 600ms;
 }
 .load__bar--3-inv {
-  animation-delay: 975ms;
+  animation-delay: 630ms;
   animation-direction: alternate-reverse;
   animation-fill-mode: forwards;
   background: #9356dc;
@@ -484,7 +484,7 @@ h1 {
   animation-delay: 800ms;
 }
 .load__bar--4-inv {
-  animation-delay: 2300ms;
+  animation-delay: 2015ms;
   animation-direction: alternate-reverse;
   animation-fill-mode: forwards;
   background: #9356dc;
@@ -496,7 +496,7 @@ h1 {
   animation-delay: 1000ms;
 }
 .load__bar--5-inv {
-  animation-delay: 1270ms;
+  animation-delay: 1255ms;
   animation-direction: alternate-reverse;
   animation-fill-mode: forwards;
   background: #9356dc;
@@ -507,7 +507,7 @@ h1 {
 .load__bar--6 {
   animation-direction: alternate-reverse;
   background: pink;
-  animation-delay: 1540ms;
+  animation-delay: 1600ms;
 }
 .load__bar--6:hover {
   animation-play-state: paused;
@@ -515,7 +515,7 @@ h1 {
 .load__bar--7 {
   animation-direction: alternate-reverse;
   background: pink;
-  animation-delay: 520ms;
+  animation-delay: 1260ms;
 }
 .load__bar--7:hover {
   animation-play-state: paused;
@@ -523,7 +523,7 @@ h1 {
 .load__bar--8 {
   animation-direction: alternate-reverse;
   background: pink;
-  animation-delay: 2280ms;
+  animation-delay: 2420ms;
 }
 .load__bar--8:hover {
   animation-play-state: paused;
@@ -531,7 +531,7 @@ h1 {
 .load__bar--9 {
   animation-direction: alternate-reverse;
   background: pink;
-  animation-delay: 1180ms;
+  animation-delay: 1520ms;
 }
 .load__bar--9:hover {
   animation-play-state: paused;
@@ -539,7 +539,7 @@ h1 {
 .load__bar--10 {
   animation-direction: alternate-reverse;
   background: pink;
-  animation-delay: 2600ms;
+  animation-delay: 1300ms;
 }
 .load__bar--10:hover {
   animation-play-state: paused;
@@ -594,47 +594,43 @@ h1 {
     display: flex;
     justify-content: center;
   }
-  .menu .coeur-menu .coeur-vide {
-    left: 60px;
-    top: 4px;
+  .menu .coeur {
+    left: 100px;
+    top: 12px;
   }
-  .menu .coeur-menu .coeur-plein {
-    left: 60px;
-    top: 4px;
-  }
-  .bouton-commander button {
+  .menu .bouton-commander button {
     margin-top: 40px;
     margin-bottom: 40px;
   }
-  .restaurants {
+  .menu .restaurants {
     background-color: #f6f6f6;
     padding: 30px 180px;
   }
-  .restaurants h2 {
+  .menu .restaurants h2 {
     margin-top: 0px;
   }
-  .restaurants img {
+  .menu .restaurants img {
     height: 231px;
   }
-  .restaurants .restaurants-cards {
+  .menu .restaurants .restaurants-cards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 68px;
   }
-  .restaurants .card {
+  .menu .restaurants .card {
     width: 46%;
   }
-  .footer {
+  .menu .footer {
     display: flex;
     flex-direction: row-reverse;
   }
-  .footer ul {
+  .menu .footer ul {
     display: flex;
     gap: 35px;
     padding-left: 80px;
   }
-  .footer ul .titre-footer {
+  .menu .footer ul .titre-footer {
     padding-bottom: 5px;
     margin-right: 58px;
   }
