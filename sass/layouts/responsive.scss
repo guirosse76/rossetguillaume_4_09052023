@@ -15,7 +15,6 @@
       display: flex;
       gap: 36px;
       margin-left: 180px;
-      //   padding-left: 25px;
     }
     li {
       margin-bottom: 0px;
@@ -70,23 +69,6 @@
     }
     .card {
       width: 46%;
-      .nouveau {
-        position: absolute;
-        left: 559px;
-      }
-      .nouveau2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        background-color: #99e2d0;
-        width: 80px;
-        right: 235px;
-        height: 29px;
-        margin-top: 20px;
-        color: #008766;
-        font-weight: 500;
-      }
     }
   }
 

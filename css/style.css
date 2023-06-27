@@ -118,13 +118,11 @@ header img {
   gap: 20px;
 }
 .restaurants .card {
+  position: relative;
   background: #ffffff;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   overflow: hidden;
-}
-.restaurants .card article {
-  position: relative;
 }
 .restaurants .card .nouveau {
   display: flex;
@@ -135,7 +133,7 @@ header img {
   width: 80px;
   right: 37px;
   height: 29px;
-  margin-top: 20px;
+  top: 20px;
   color: #008766;
   font-weight: 500;
 }
@@ -450,7 +448,7 @@ h1 {
   animation-delay: 200ms;
 }
 .load__bar--1-inv {
-  animation-delay: 830ms;
+  animation-delay: 1085ms;
   animation-direction: alternate-reverse;
   animation-fill-mode: forwards;
   background: #9356dc;
@@ -462,7 +460,7 @@ h1 {
   animation-delay: 400ms;
 }
 .load__bar--2-inv {
-  animation-delay: 790ms;
+  animation-delay: 1180ms;
   animation-direction: alternate-reverse;
   animation-fill-mode: forwards;
   background: #9356dc;
@@ -474,7 +472,7 @@ h1 {
   animation-delay: 600ms;
 }
 .load__bar--3-inv {
-  animation-delay: 1620ms;
+  animation-delay: 975ms;
   animation-direction: alternate-reverse;
   animation-fill-mode: forwards;
   background: #9356dc;
@@ -486,7 +484,7 @@ h1 {
   animation-delay: 800ms;
 }
 .load__bar--4-inv {
-  animation-delay: 2045ms;
+  animation-delay: 2300ms;
   animation-direction: alternate-reverse;
   animation-fill-mode: forwards;
   background: #9356dc;
@@ -498,7 +496,7 @@ h1 {
   animation-delay: 1000ms;
 }
 .load__bar--5-inv {
-  animation-delay: 1915ms;
+  animation-delay: 1270ms;
   animation-direction: alternate-reverse;
   animation-fill-mode: forwards;
   background: #9356dc;
@@ -509,7 +507,7 @@ h1 {
 .load__bar--6 {
   animation-direction: alternate-reverse;
   background: pink;
-  animation-delay: 640ms;
+  animation-delay: 1540ms;
 }
 .load__bar--6:hover {
   animation-play-state: paused;
@@ -517,7 +515,7 @@ h1 {
 .load__bar--7 {
   animation-direction: alternate-reverse;
   background: pink;
-  animation-delay: 1280ms;
+  animation-delay: 520ms;
 }
 .load__bar--7:hover {
   animation-play-state: paused;
@@ -525,7 +523,7 @@ h1 {
 .load__bar--8 {
   animation-direction: alternate-reverse;
   background: pink;
-  animation-delay: 900ms;
+  animation-delay: 2280ms;
 }
 .load__bar--8:hover {
   animation-play-state: paused;
@@ -533,7 +531,7 @@ h1 {
 .load__bar--9 {
   animation-direction: alternate-reverse;
   background: pink;
-  animation-delay: 1600ms;
+  animation-delay: 1180ms;
 }
 .load__bar--9:hover {
   animation-play-state: paused;
@@ -541,7 +539,7 @@ h1 {
 .load__bar--10 {
   animation-direction: alternate-reverse;
   background: pink;
-  animation-delay: 1700ms;
+  animation-delay: 2600ms;
 }
 .load__bar--10:hover {
   animation-play-state: paused;
@@ -626,23 +624,6 @@ h1 {
   }
   .restaurants .card {
     width: 46%;
-  }
-  .restaurants .card .nouveau {
-    position: absolute;
-    left: 559px;
-  }
-  .restaurants .card .nouveau2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    background-color: #99e2d0;
-    width: 80px;
-    right: 235px;
-    height: 29px;
-    margin-top: 20px;
-    color: #008766;
-    font-weight: 500;
   }
   .footer {
     display: flex;
